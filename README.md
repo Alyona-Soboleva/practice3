@@ -8,8 +8,6 @@
 
 - JDK 21+
 - IntelliJ IDEA Community
-- Git и GitHub аккаунт
-
 ---
 
 ## Как работать с лабораторной
