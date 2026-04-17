@@ -12,12 +12,16 @@ public class Truck extends Vehicle {
     public double getFuelConsumption() {
         // TODO: 20 + cargoCapacityTons * 3.
         // ▼ ВАШ КОД ЗДЕСЬ ▼
-        return 0.0;
+        return 20 + (cargoCapacityTons * 3);
         // ▲ КОНЕЦ ВАШЕГО КОДА ▲
     }
 
     @Override
     public String getType() {
         return "Truck";
+    }
+
+    public double getCargoCapacityTons() {
+        return cargoCapacityTons;
     }
 }
