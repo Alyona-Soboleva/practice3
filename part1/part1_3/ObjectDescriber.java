@@ -5,7 +5,7 @@ public class ObjectDescriber {
     public static String describe(Object obj) {
         // TODO: используйте switch с pattern matching (Java 17+ preview).
         // Подсказка 1: обработайте null отдельным case.
-        // Подсказка 2: для Integer укажите "положительное" или "не положительное".
+        // Подсказка 2: для Integer укажите "положительное" или "не положительное" .
         // ▼ ВАШ КОД ЗДЕСЬ ▼
         return switch (obj) {
             case null -> "null значение";
