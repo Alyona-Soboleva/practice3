@@ -8,7 +8,13 @@ public abstract class Herbivore extends Animal {
     public void graze() {
         // TODO: +15 к energyLevel (макс 100).
         // ▼ ВАШ КОД ЗДЕСЬ ▼
+        int newEnergy = energyLevel + 15;
+        if (newEnergy > 100) {
+            newEnergy = 100;
+        }
+        energyLevel = newEnergy;
 
+        System.out.println(name + " пасётся! Энергия: " + energyLevel);
         // ▲ КОНЕЦ ВАШЕГО КОДА ▲
     }
 }

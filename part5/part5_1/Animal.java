@@ -16,14 +16,27 @@ public abstract class Animal {
     public void eat(int calories) {
         // TODO: увеличьте energyLevel, но не выше 100.
         // ▼ ВАШ КОД ЗДЕСЬ ▼
-
+        if (calories > 0) {
+            energyLevel += calories;
+            if (energyLevel > 100) {
+                energyLevel = 100;
+            }
+            System.out.println(name + " поел(а) на " + calories + " калорий. Энергия: " + energyLevel);
+        }
         // ▲ КОНЕЦ ВАШЕГО КОДА ▲
     }
 
     public void sleep(int hours) {
         // TODO: увеличьте energyLevel в зависимости от часов, но не выше 100.
         // ▼ ВАШ КОД ЗДЕСЬ ▼
-
+        if (hours > 0) {
+            int energyGain = hours * 10; // 10 энергии за час сна
+            energyLevel += energyGain;
+            if (energyLevel > 100) {
+                energyLevel = 100;
+            }
+            System.out.println(name + " поспал(а) " + hours + " ч. Энергия: " + energyLevel);
+        }
         // ▲ КОНЕЦ ВАШЕГО КОДА ▲
     }
 
